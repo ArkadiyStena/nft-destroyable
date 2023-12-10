@@ -146,7 +146,7 @@ int min_tons_for_storage() asm "50000000 PUSHINT"; ;; 0.05 TON
         set_data(
             begin_cell()
                 .store_uint(index, 64)
-                .store_slice(collection_address)
+                .store_uint(0, 2)
             .end_cell()
         );
     }
